@@ -1,0 +1,757 @@
+body{
+    padding-top: 60px;
+    margin:0;
+    font-family: 'Roboto Mono', monospace;
+    background: #F7DCB4;
+    background-size:cover;
+}
+.navigationbar {
+    position:fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    text-align: center;
+    z-index: 2;
+}
+
+.navigationbar a {
+    display: inline-block;
+    background-color: #5C755E;
+    padding: 10px 15px;
+    border: 2px solid #111;
+    color: #d8d8d8;
+    border-top: 0px;
+    border-radius: 0px 0px 20px 20px;
+    cursor:pointer;
+    width: 150px;
+    margin: 0px 1px;
+}
+
+.recipecardnametext {
+    color: #d8d8d8;
+}
+
+.navigationbar a:hover {
+    background-color: #5ebf66;
+    color: #111;
+    -webkit-box-shadow: 2px 2px 8px 3px rgba(0,0,0,0.25);
+    -moz-box-shadow: 2px 2px 8px 3px rgba(0,0,0,0.25);
+    box-shadow: 2px 2px 8px 3px rgba(0,0,0,0.25);
+}
+
+a {
+    text-decoration: none;
+    color: #2C6700;
+    font-weight: 600;
+}
+
+ul {
+    list-style-type: none;
+    text-align: left;
+    padding: 0px 30px;
+}
+
+.logowrapper {
+    background: url(Images/Logo.png);
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position:center;
+    width: 350px;
+    height: 350px;
+    margin: 10px auto;
+
+}
+
+.splashwrapper {
+    background: url(Images/Sirloin%20Splash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:center;
+    height: 550px;
+    border-bottom: 3px solid #111;
+    border-top: 3px solid #111;
+    -webkit-box-shadow: -1px 1px 15px 1px rgba(0,0,0,0.25);
+    -moz-box-shadow: -1px 1px 15px 1px rgba(0,0,0,0.25);
+    box-shadow: -1px 1px 15px 1px rgba(0,0,0,0.25);
+    
+}
+
+.currenttoprecipes {
+    text-align: center;
+    font-size: 60px;
+    font-weight: 600;
+    max-width: 960px;
+    width: 700px;
+    padding: 25px 0px 15px 0px;
+    margin: 10px auto;
+    color: #5C755E;
+}
+
+.toprecipewrapper {
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 960px;
+    margin-bottom: 20px;
+}
+
+.recipecard {
+    display: inline-block;
+    position: relative;
+    width: 32%;
+    height: contain;
+    text-align: center;
+    border: 1px solid #111;
+    border-bottom: 1px;
+    border-radius: 10px 10px 0px 0px;
+    margin: 0px -1px;
+    background-color: #5C755E;
+    -webkit-box-shadow: 0px 6px 3px 3px rgba(0,0,0,0.25);
+    -moz-box-shadow: 0px 6px 3px 3px rgba(0,0,0,0.25);
+    box-shadow: 0px 6px 3px 3px rgba(0,0,0,0.25);
+}
+
+.recipecard h4{
+    padding: 35px 20px 22px;
+    font-size: 20px;
+    margin: 20px 0px 60px 0px;
+    color: #d8d8d8;
+}
+
+.recipecard .portrait1 {
+    background: url(images/profile1.jpg) no-repeat center center;
+    background-size: cover;
+    position: absolute;
+    display: inline-block;
+    width:125px;
+    height:125px;
+    margin: 90px 0px 0px 0px;
+    border-radius: 50%;
+    border: 2px;
+    top:10px;
+    left:90px;
+    -webkit-box-shadow: 0px 6px 3px 3px rgba(0,0,0,0.25);
+    -moz-box-shadow: 0px 6px 3px 3px rgba(0,0,0,0.25);
+    box-shadow: 0px 6px 3px 3px rgba(0,0,0,0.25);
+
+}
+
+.recipecard .portrait2 {
+    background: url(images/profile1.jpg) no-repeat center center;
+    background-size: cover;
+    position: absolute;
+    display: inline-block;
+    width:125px;
+    height:125px;
+    margin: 90px 0px 0px 0px;
+    border-radius: 50%;
+    border: 2px;
+    top:10px;
+    left:90px;
+    -webkit-box-shadow: 0px 6px 3px 3px rgba(0,0,0,0.25);
+    -moz-box-shadow: 0px 6px 3px 3px rgba(0,0,0,0.25);
+    box-shadow: 0px 6px 3px 3px rgba(0,0,0,0.25);
+
+}
+
+.recipecard .portrait3 {
+    background: url(images/profile1.jpg) no-repeat center center;
+    background-size: cover;
+    position: absolute;
+    display: inline-block;
+    width:125px;
+    height:125px;
+    margin: 90px 0px 0px 0px;
+    border-radius: 50%;
+    border: 2px;
+    top:10px;
+    left:90px;
+    -webkit-box-shadow: 0px 6px 3px 3px rgba(0,0,0,0.25);
+    -moz-box-shadow: 0px 6px 3px 3px rgba(0,0,0,0.25);
+    box-shadow: 0px 6px 3px 3px rgba(0,0,0,0.25);
+}
+
+.recipecard .foodimage3 {
+    display: block;
+    background-image: url(Images/Lemon%20Pad%20Thai.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 300px;
+    width: 307px;
+    border-bottom: 1px solid #111;
+    
+}
+
+.recipecard .foodimage2 {
+    display: block;
+    background-image: url(Images/Torte.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 300px;
+    width: 307px;
+    border-bottom: 1px solid #111;
+
+}
+
+.recipecard .foodimage1 {
+    display: block;
+    background-image: url(Images/FishnChips.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 300px;
+    width: 307px;
+    border-bottom: 1px solid #111;
+    
+}
+
+.socialconnects {
+    text-align: center;
+    border-top: 1px solid black;
+    background-color: #A97D5D;
+    -webkit-box-shadow: -1px 1px 15px 1px rgba(0,0,0,0.25);
+    -moz-box-shadow: -1px 1px 15px 1px rgba(0,0,0,0.25);
+    box-shadow: -1px 1px 15px 1px rgba(0,0,0,0.25);
+}
+
+.socialconnectbutton {
+    display: inline-block;
+    text-align: center;
+    background-color: #5C755E;
+    padding: 8px 12px;
+    color: #d8d8d8;
+    border: 1px solid black;
+    margin: 20px 0px;
+}
+
+.socialconnectbutton:hover {
+    background-color: #5ebf66;
+    color: #111;
+    -webkit-box-shadow: 2px 2px 8px 3px rgba(0,0,0,0.25);
+    -moz-box-shadow: 2px 2px 8px 3px rgba(0,0,0,0.25);
+    box-shadow: 2px 2px 8px 3px rgba(0,0,0,0.25);
+}
+
+.pagetitlewrapper {
+    text-align: center;
+    font-size: 60px;
+    font-weight: 600;
+    max-width: 960px;
+    width: 600px;
+    padding: 15px 0px 15px 0px;
+    margin: 10px auto;
+    color: #5C755E;
+    }
+
+.accounthead {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: -10px;
+    
+}
+
+.accountname {
+    text-align: center;
+    font-size: 25px;
+    font-weight: 600;
+    max-width: 960px;
+    width: 600px;
+    padding: 10px;
+    margin: 0 auto;
+    color: #5C755E;
+    font-weight: 600;
+}
+
+.portrait {
+    text-align: center;
+    display: inline-block;
+    padding: 50px 55px;
+    border: 1px solid black;
+    border-radius: 90px;
+    background-color: lightgray;
+    margin: 10px;
+}
+
+.yourrecipes {
+    text-align: center;
+    font-size: 45px;
+    font-weight: 600;
+    max-width: 960px;
+    width: 600px;
+    padding: 15px 0px 10px 0px;
+    margin: 60px auto 0px;
+    color: #d8d8d8;
+    background-color: #5C755E; 
+    border-radius: 50px 50px 0px 0px;
+
+}
+
+.sectioncard {
+    background-color: #5C755E;
+    padding: 20px 10px 5px;
+    max-width: 960px;
+    margin-bottom: 50px;
+    margin: auto;
+    border-radius: 15px 15px 0px 0px;
+    -webkit-box-shadow: 0px 5px 3px 3px rgba(0,0,0,0.25);
+    -moz-box-shadow: 0px 5px 3px 3px rgba(0,0,0,0.25);
+    box-shadow: 0px 5px 3px 3px rgba(0,0,0,0.25);
+}
+
+.sectioncardrecipes {
+    background-color: #5C755E;
+    padding: 20px;
+    max-width: 960px;
+    margin-bottom: 50px;
+    margin: auto;
+    border-radius: 15px 15px 0px 0px;
+    -webkit-box-shadow: 0px 5px 3px 3px rgba(0,0,0,0.25);
+    -moz-box-shadow: 0px 5px 3px 3px rgba(0,0,0,0.25);
+    box-shadow: 0px 5px 3px 3px rgba(0,0,0,0.25);
+}
+
+.recipecardbp {
+    background-color: #A97D5D;
+    height: 915px;
+    display: block;
+    text-align: center;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    margin: 0px auto;
+}
+
+.recipewrapper {
+    margin: 0px auto 20px;
+
+}
+
+.recipetablerow {
+    background-color: #A97D5D;
+    position: relative;
+    width: 940px;
+    margin: 5px auto;
+    border: 1px solid black;
+}
+
+.recipeimgthumbpadthai {
+    display: block;
+    background-image: url(Images/Lemon%20Pad%20Thai.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 120px;
+    width: 150px;
+    
+}
+
+.recipeimgthumbfancy {
+    display: block;
+    background-image: url(Images/Fancyfood.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 120px;
+    width: 150px;
+    
+}
+
+.recipeimgthumbfishnchips {
+    display: block;
+    background-image: url(Images/FishnChips.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 120px;
+    width: 150px;
+    
+}
+
+.recipeimgthumbsteaksandwich {
+    display: block;
+    background-image: url(Images/Steak%20Sandwich%20and%20Onion%20Rings.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 120px;
+    width: 150px;
+    
+}
+
+.recipeimgthumbtorte {
+    display: block;
+    background-image: url(Images/Torte.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 120px;
+    width: 150px;
+    
+}
+
+.recipeprofile1link {
+    background: url(images/profile1.jpg) no-repeat center center;
+    background-size: cover;
+    width:100px;
+    height:100px;
+    display:inline-block;
+    border-radius: 50%;
+    border: 2px;
+    position:absolute;
+    top:10px;
+    left:100px;
+    -webkit-box-shadow: 2px 2px 8px 3px rgba(0,0,0,0.25);
+    -moz-box-shadow: 2px 2px 8px 3px rgba(0,0,0,0.25);
+    box-shadow: 2px 2px 8px 3px rgba(0,0,0,0.25);
+}
+
+.recipeprofile2link {
+    background: url(images/Profile2.jpg) no-repeat center center;
+    background-size: cover;
+    width:100px;
+    height:100px;
+    display:inline-block;
+    border-radius: 50%;
+    border: 2px;
+    position:absolute;
+    top:10px;
+    left:100px;
+    -webkit-box-shadow: 2px 2px 8px 3px rgba(0,0,0,0.25);
+    -moz-box-shadow: 2px 2px 8px 3px rgba(0,0,0,0.25);
+    box-shadow: 2px 2px 8px 3px rgba(0,0,0,0.25);
+}
+
+.recipetextname {
+    position: absolute;
+    left: 225px;
+    top: 12px;
+    color: #e4e4e4;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 30px;
+    padding: 1em 0 1em 0;
+    font-weight: 600;
+}
+
+.ingredientdescription {
+    position: absolute;
+    left: 520px;
+    top: 38px;
+    color: #111;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 1em 0 1em 0;
+}
+
+.reciperatingbox {
+    display: inline-block;
+    position: absolute;
+    padding: 40.5px 20px;
+    font-size: 30px;
+    font-weight: 600;
+    right: 0px;
+    background-color: #FFCF79;
+    top: 0;
+    color: #111;
+}
+
+.tableportraitaccount {
+    display: inline-block;
+    padding: 25px 30px;
+    border: 1px solid black;
+    border-radius: 90px;
+    background-color: lightgray;
+    margin-left: -80px;   
+    margin-right: 20px;
+}
+
+.tableportraitother {
+    display: inline;
+    margin: 0 auto;
+    height: 100%;
+    width: auto;
+}
+
+.image-cropper {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    position: relative;
+    overflow: hidden;
+    border: 2px;
+    border-radius: 50%;
+    margin-left: -55px;   
+    margin-right: 10px;
+    margin-bottom: 10px;
+    -webkit-box-shadow: -2px 2px 24px 2px rgba(0,0,0,0.25);
+    -moz-box-shadow: -2px 2px 24px 2px rgba(0,0,0,0.25);
+    box-shadow: -2px 2px 24px 2px rgba(0,0,0,0.25);
+}
+
+.submityourown {
+    display: block;
+    text-align: center;
+    border: 1px solid black;
+    color: #d8d8d8;
+    background-color: #5C755E;
+    width: 200px;
+    padding: 15px;
+    margin: 30px auto;
+    -webkit-box-shadow: 2px 2px 8px 3px rgba(0,0,0,0.25);
+    -moz-box-shadow: 2px 2px 8px 3px rgba(0,0,0,0.25);
+    box-shadow: 2px 2px 8px 3px rgba(0,0,0,0.25);
+}
+
+.submityourown:hover {
+    background-color: #5ebf66;
+    color: #111;
+    -webkit-box-shadow: 2px 2px 8px 3px rgba(0,0,0,0.5);
+    -moz-box-shadow: 2px 2px 8px 3px rgba(0,0,0,0.5);
+    box-shadow: 2px 2px 8px 3px rgba(0,0,0,0.5);
+}
+
+.submissionwrapper {
+    text-align: center;
+    width: 960px;
+    margin: 10px auto;
+}
+
+.recipenamebox {
+    display: inline-block;
+    text-align: center;
+    background-color: d8d8d8;
+    width: 440px;
+    padding: 10px 15px;
+    margin: 0px;
+    font-size: 16px;
+    
+}
+
+input, textarea {
+     font-family: 'Roboto Mono', monospace; 
+}
+
+.submissiontextbox {
+    width: 943px;
+    text-align: left;
+    padding: 5px;
+    margin: 10px 0px -20px;
+    height: 600px;
+    font-size: 16px;
+    background-color: d8d8d8;
+}
+
+.recipetitlefull {
+    text-align: center;
+    font-size: 45px;
+    font-weight: 600;
+    max-width: 960px;
+    width: 600px;
+    padding: 15px 0px 10px 0px;
+    margin: 60px auto 0px;
+    color: #d8d8d8;
+    background-color: #5C755E; 
+    border-radius: 50px 50px 0px 0px;
+}
+
+.authoraccount {
+    display: block;
+    text-align: center;
+    border: 2px solid black;
+    color: #111;
+    background-color: #FFCF79;
+    width: 150px;
+    padding: 15px;
+    margin: -40px auto 35px;
+    -webkit-box-shadow: 2px 2px 8px 3px rgba(0,0,0,0.25);
+    -moz-box-shadow: 2px 2px 8px 3px rgba(0,0,0,0.25);
+    box-shadow: 2px 2px 8px 3px rgba(0,0,0,0.25);
+}
+
+.portrait2recipefullwrapper{
+    background: url(images/Profile2.jpg) no-repeat center center;
+    background-size: cover;
+    display: block;
+    width: 150px;
+    height: 150px;
+    margin: 30px auto 60px;
+    border-radius: 50%;
+    border: 2px;
+    -webkit-box-shadow: 2px 2px 8px 3px rgba(0,0,0,0.25);
+    -moz-box-shadow: 2px 2px 8px 3px rgba(0,0,0,0.25);
+    box-shadow: 2px 2px 8px 3px rgba(0,0,0,0.25);
+}
+
+.portrait1recipefullwrapper{
+    background: url(images/profile1.jpg) no-repeat center center;
+    background-size: cover;
+    display: block;
+    width: 150px;
+    height: 150px;
+    margin: 30px auto 60px;
+    border-radius: 50%;
+    border: 2px;
+    -webkit-box-shadow: 2px 2px 8px 3px rgba(0,0,0,0.25);
+    -moz-box-shadow: 2px 2px 8px 3px rgba(0,0,0,0.25);
+    box-shadow: 2px 2px 8px 3px rgba(0,0,0,0.25);
+}
+
+.recipeviewimgfancy {
+    background: url(Images/Fancyfood.jpg);
+    background-size: cover;
+    background-position: center;
+    display: inline-block;
+    width: 400px;
+    height: 400px;
+    float: left;
+    border: 2px solid #111;
+}
+
+.recipeviewimgfish {
+    background: url(Images/FishnChips.jpg);
+    background-size: cover;
+    background-position: center;
+    display: inline-block;
+    width: 400px;
+    height: 400px;
+    float: left;
+    border: 2px solid #111;
+}
+
+.recipeviewimgtorte {
+    background: url(Images/Torte.jpg);
+    background-size: cover;
+    background-position: center;
+    display: inline-block;
+    width: 400px;
+    height: 400px;
+    float: left;
+    border: 2px solid #111;
+}
+
+.recipeviewimgpadthai {
+    background: url(Images/Lemon%20Pad%20Thai.jpg);
+    background-size: cover;
+    background-position: center;
+    display: inline-block;
+    width: 400px;
+    height: 400px;
+    float: left;
+    border: 2px solid #111;
+}
+
+.recipeviewimgsteak {
+    background: url(Images/Steak%20Sandwich%20and%20Onion%20Rings.jpg);
+    background-size: cover;
+    background-position: center;
+    display: inline-block;
+    width: 400px;
+    height: 400px;
+    float: left;
+    border: 2px solid #111;
+}
+
+.recipetextfull {
+    display: inline-block;
+    width: 400px;
+    height: 390px;
+    padding: 10px 5px 0px;
+    float: right;
+    border: 2px solid #111;
+    color: #111;
+    background-color: #FFCF79;
+}
+
+.recipesteps {
+    text-align: center;
+    margin: 440px auto 20px;
+    width: 836px;
+    height: 440px;
+    padding: 20px 10px 0px;
+    border: 2px solid #111;
+    color: #111;
+    background-color: #FFCF79;
+}
+    
+.stupiddiv {
+    display: block;
+    height: 400px;
+    padding: 10px 50px;
+}
+
+.accountentrywrapper {
+    width: 300px;
+    margin: 50px auto 0px;
+    text-align: center;
+}
+
+.accountentry {
+    text-align: center;
+    width: 300px;
+    padding: 10px 0px;
+    margin: 5px auto;
+    font-size: 16px;
+    color: #111;
+    background-color: #d8d8d8;
+    
+}
+
+.pwentrywrapper {
+    width: 300px;
+    margin: 5px auto 0px;
+    text-align: center;
+}
+
+.pwentry {
+    text-align: center;
+    width: 300px;
+    padding: 10px 0px;
+    font-size: 16px;
+    margin: 5px auto;
+    color: #111;
+    background-color: #d8d8d8;
+}
+
+.loginbutton {
+    display: block;
+    text-align: center;
+    border: 1px solid black;
+    color: #d8d8d8;
+    background-color: #5C755E;
+    width: 300px;
+    padding: 10px 0px;
+    margin: 10px auto;
+    -webkit-box-shadow: 2px 2px 8px 3px rgba(0,0,0,0.25);
+    -moz-box-shadow: 2px 2px 8px 3px rgba(0,0,0,0.25);
+    box-shadow: 2px 2px 8px 3px rgba(0,0,0,0.25);
+}
+
+.loginbutton:hover {
+    background-color: #5ebf66;
+    color: #111;
+    -webkit-box-shadow: 2px 2px 8px 3px rgba(0,0,0,0.5);
+    -moz-box-shadow: 2px 2px 8px 3px rgba(0,0,0,0.5);
+    box-shadow: 2px 2px 8px 3px rgba(0,0,0,0.5);
+}
+
+.imagecropper {
+    width: 150px;
+    height: 150px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+    margin: 10px auto;
+    -webkit-box-shadow: 2px 2px 24px 2px rgba(0,0,0,0.25);
+    -moz-box-shadow: 2px 2px 24px 2px rgba(0,0,0,0.25);
+    box-shadow: 2px 2px 24px 2px rgba(0,0,0,0.25);
+}
+
+img {
+    display: inline;
+    margin: 0 auto;
+    height: 120%;
+    width: auto;
+    
+}
